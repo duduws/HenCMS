@@ -1,0 +1,46 @@
+.avatar {
+    height: 110px;
+     width: 64px;
+     position: absolute;
+}
+.avatar.img:nth-child(1) {
+     left: 33px;
+     top: -85px;
+}
+
+.avatar.img:nth-child(2) {
+    top: -58px;
+}
+
+.avatar.img:nth-child(3) {
+    left: 63px;
+    top: -47px;
+}
+#h42{
+    position:absolute;
+    left:160px;
+    top:-106px;
+    height:57px;
+    width:145px;
+    background:#2fd579;
+    border-radius:5px
+}
+#h42:hover{
+    background:#25b867
+}
+#h43{
+    position:absolute;
+    width:21px;
+    height:26px;
+    right:13px;
+    top:15px;
+    background:url(/images/site/pagetemplate.png) -47px -137px
+}
+#h44{
+    position:absolute;
+    font-size:130%;
+    text-transform:uppercase;
+    color:#fff;
+    left:22px;
+    top:16px
+}

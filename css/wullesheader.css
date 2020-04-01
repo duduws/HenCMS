@@ -1,0 +1,323 @@
+#header-content {
+	background: #a7dbef;
+	height: 180px;
+	width: 100%
+}
+
+#header-content .hotel-clouds {
+	position: absolute;
+	background: url(/images/header/header-clouds.png);
+	height: 150px;
+	width: 420px;
+	top: 15px
+}
+
+.hotel-clouds {
+	-webkit-animation: moveclouds 30s linear infinite;
+	-moz-animation: moveclouds 30s linear infinite;
+	-o-animation: moveclouds 30s linear infinite
+}
+
+@-webkit-keyframes moveclouds {
+	0% {
+		margin-left: 775px
+	}
+	100% {
+		margin-left: -775px
+	}
+}
+
+@-moz-keyframes moveclouds {
+	0% {
+		margin-left: 775px
+	}
+	100% {
+		margin-left: -775px
+	}
+}
+
+@-o-keyframes moveclouds {
+	0% {
+		margin-left: 775px
+	}
+	100% {
+		margin-left: -775px
+	}
+}
+
+#header-content .hotel-avatar {
+	position: absolute;
+	width: 64px;
+	height: 110px;
+	left: 60px;
+	top: 60px
+}
+
+#header-content .hotel {
+	position: absolute;
+	left: -41px;
+	right: 0;
+	margin: 0 auto;
+	background: url(/images/header/coffee_house_header.png) center center;
+	width: 1202px;
+	height: 180px
+}
+
+#header-content .online-count-box {
+	background: #fff;
+	border-radius: 4px;
+	text-align: center;
+	padding: 12px 20px;
+	position: absolute;
+	right: 240px;
+	top: 52px;
+	font: 500 12px "Maven Pro", sans-serif;
+	color: rgba(46, 58, 63, 0.6);
+	-webkit-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.02);
+	box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.02);
+	letter-spacing: -0.5px
+}
+
+#header-content .online-count-box:after {
+	border-style: solid;
+	border-color: transparent transparent transparent #fff;
+	border-width: 10px;
+	position: absolute;
+	margin: -10px 0 0 20px;
+	content: ''
+}
+
+#header-content .online-count-box b {
+	display: block;
+	color: #424251;
+	font: 600 13px "Maven Pro", sans-serif;
+	letter-spacing: 0
+}
+
+#header-menu {
+	background: #fff;
+	height: 60px;
+	width: 100%;
+	-webkit-box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.005);
+	box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.005);
+	margin: 0 0 50px 0
+}
+
+#header-menu .user-menu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: relative
+}
+
+#header-menu .user-menu .user-avatar-menu {
+	background: 0 -10px no-repeat;
+	height: 60px;
+	width: 64px;
+	float: left;
+	padding: 0;
+	position: relative;
+	top: -18px;
+	left: -15px;
+}
+
+#header-menu .user-menu li {
+	padding: 20px 15px;
+	cursor: pointer;
+	margin: 0
+}
+
+#header-menu .user-menu li a {
+	text-decoration: none;
+	color: #424251;
+	-webkit-transition: color .2s;
+	transition: color .2s;
+	text-transform: uppercase;
+	font: 600 14px "Maven Pro", sans-serif
+}
+
+#header-menu .user-menu li a:hover {
+	color: rgba(46, 58, 63, 0.7)
+}
+
+#header-menu .user-menu li span {
+	position: relative;
+	margin: 0 0 0 15px;
+	top: 2px;
+	font-size: 18px
+}
+
+#header-menu .user-menu li:hover {
+	height: 85px
+}
+
+#header-menu .user-menu li:hover .user-subnavi {
+	display: block
+}
+
+#header-menu .user-menu li .user-subnavi {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+	position: absolute;
+	background: #fff;
+	margin: 40px 0 0 0;
+	z-index: 9;
+	left: -0px;
+	-webkit-box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.005);
+	box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.005);
+	border-radius: 4px
+}
+
+#header-menu .user-menu li .user-subnavi li {
+	float: left;
+	width: 100%;
+	text-transform: none;
+	padding: 0;
+	height: auto
+}
+
+#header-menu .user-menu li .user-subnavi li a {
+	text-decoration: none;
+	color: rgba(46, 58, 63, 0.8);
+	-webkit-transition: color .2s;
+	transition: color .2s;
+	padding: 0 20px;
+	display: block;
+	text-transform: none;
+	font: 600 12px "Maven Pro", sans-serif
+}
+
+#header-menu .user-menu li .user-subnavi li a:hover {
+	color: rgba(46, 58, 63, 0.6)
+}
+
+#header-menu .user-menu li .user-subnavi li a.logout {
+	color: #ef5350
+}
+
+#header-menu .user-menu li .user-subnavi li a.logout:hover {
+	color: rgba(239, 83, 80, 0.7)
+}
+
+#header-menu .user-menu li .user-subnavi li:first-child,
+#header-menu .user-menu li .user-subnavi li:last-child {
+	padding: 16px 0
+}
+
+#header-menu .user-menu li .user-subnavi:before {
+	border-style: solid;
+	border-color: transparent transparent #fff transparent;
+	border-width: 10px;
+	position: absolute;
+	margin: -20px 0 0 44%;
+	content: ''
+}
+
+#header-menu .logo {
+	background: url(/images/header/logo.png) no-repeat;
+	width: 99px;
+	height: 88px;
+	margin: 0 auto;
+	border: 4px solid #fff;
+	margin-top: -14px;
+	display: block
+}
+
+#header-menu .navigation {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+	position: relative
+}
+
+#header-menu .navigation li {
+	float: left;
+	line-height: 60px;
+	position: relative
+}
+
+#header-menu .navigation li a {
+	padding: 21px 15px;
+	text-decoration: none;
+	font: 600 14px "Maven Pro", sans-serif;
+	text-transform: uppercase;
+	color: #424251;
+	-webkit-transition: color .2s;
+	transition: color .2s
+}
+
+#header-menu .navigation li a span {
+	position: relative;
+	margin: 0 0 0 15px;
+	top: 2px;
+	font-size: 18px
+}
+
+#header-menu .navigation li a:hover {
+	color: rgba(46, 58, 63, 0.7)
+}
+
+#header-menu .navigation li:hover {
+	height: 85px
+}
+
+#header-menu .navigation li:hover .subnavi {
+	display: block
+}
+
+#header-menu .navigation li .subnavi {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+	position: absolute;
+	background: #fff;
+	margin: 20px 0 0 0;
+	z-index: 9;
+	left: -0px;
+	-webkit-box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.005);
+	box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.005);
+	border-radius: 4px
+}
+
+#header-menu .navigation li .subnavi li {
+	float: left;
+	width: 100%;
+	font: 600 12px "Maven Pro", sans-serif;
+	text-transform: none;
+	padding: 0;
+	height: auto
+}
+
+#header-menu .navigation li .subnavi li a {
+	text-decoration: none;
+	color: rgba(46, 58, 63, 0.8);
+	-webkit-transition: color .2s;
+	transition: color .2s;
+	padding: 0 20px;
+	display: block;
+	text-transform: none;
+	font: 600 12px "Maven Pro", sans-serif
+}
+
+#header-menu .navigation li .subnavi li a:hover {
+	color: rgba(46, 58, 63, 0.6)
+}
+
+#header-menu .navigation li .subnavi li:first-child,
+#header-menu .navigation li .subnavi li:last-child {
+	padding: 16px 0
+}
+
+#header-menu .navigation li .subnavi:before {
+	border-style: solid;
+	border-color: transparent transparent #fff transparent;
+	border-width: 10px;
+	position: absolute;
+	margin: -20px 0 0 44%;
+	content: ''
+}

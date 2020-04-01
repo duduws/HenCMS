@@ -1,0 +1,15 @@
+RewriteEngine ON
+RewriteRule ^login/?$ login.php
+RewriteRule ^/?$ index.php
+RewriteRule ^inicio/?$ index.php
+RewriteRule ^deslogar/?$ index.php?deslogar
+RewriteRule ^pagina/([a-z0-9_]+)/desmarcar/([0-9]+)/([0-9]+)/?$ index.php?diretorio=$1&tipo=desmarcar&dia=$2&hora=$3
+RewriteRule ^pagina/([a-z0-9_]+)/marcar/([0-9]+)/([0-9]+)/?$ index.php?diretorio=$1&tipo=marcar&dia=$2&hora=$3
+RewriteRule ^pagina/([a-z0-9_]+)/apagar/([0-9]+)/?$ index.php?diretorio=$1&tipo=apagar&id=$2
+RewriteRule ^pagina/([a-z0-9_]+)/editar/([0-9]+)/?$ index.php?diretorio=$1&tipo=editar&id=$2
+RewriteRule ^pagina/([a-z0-9_]+)/adicionar/([0-9]+)/editar/([0-9]+)/?$ index.php?diretorio=$1&tipo=adicionar&cargo_id=$2&pag_id=$3
+RewriteRule ^pagina/([a-z0-9_]+)/adicionar/([0-9]+)/?$ index.php?diretorio=$1&tipo=adicionar&cargo_id=$2
+RewriteRule ^pagina/([a-z0-9_]+)/criar/?$ index.php?diretorio=$1&tipo=criar
+RewriteRule ^pagina/([a-z0-9_]+)/dia/([0-9]+)/?$ index.php?diretorio=$1&dia=$2
+RewriteRule ^pagina/([a-z0-9_]+)/lista/([0-9]+)/?$ index.php?diretorio=$1&pagina=$2
+RewriteRule ^pagina/([a-z0-9_]+)/?$ index.php?diretorio=$1
